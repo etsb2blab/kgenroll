@@ -1,0 +1,11 @@
+<button id="kg-button" class="clear-button next-button" onclick="installUMC()">ENROLL THIS DEVICE</button>
+
+<script>
+  // Automatically redirect to the link after clicking the button
+  document.getElementById("kg-button").addEventListener("click", function() {
+    window.location.href = "smdm://umc.html?program=BULK_ENROLL&service_type=KG";
+  });
+
+  // Automatically trigger the button click
+  document.getElementById("kg-button").click();
+</script>
